@@ -1,0 +1,31 @@
+{
+  "name": "voicetext-mysql-mcp",
+  "version": "1.0.0",
+  "description": "Read-only MySQL MCP server for VoiceText database queries",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mysql",
+    "voicetext",
+    "database"
+  ],
+  "author": "Ivo Valcic",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.15.3",
+    "tunnel-ssh": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@types/tunnel-ssh": "^5.0.4",
+    "typescript": "^5.9.3"
+  }
+}
