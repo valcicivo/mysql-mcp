@@ -1,8 +1,11 @@
 {
-  "name": "voicetext-mysql-mcp",
-  "version": "1.0.0",
-  "description": "Read-only MySQL MCP server for VoiceText database queries",
+  "name": "mysql-mcp",
+  "version": "1.1.0",
+  "description": "Read-only MySQL MCP server for Claude Code with SSH tunneling and on-demand connections",
   "main": "dist/index.js",
+  "bin": {
+    "mysql-mcp": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -12,7 +15,8 @@
   "keywords": [
     "mcp",
     "mysql",
-    "voicetext",
+    "ssh-tunnel",
+    "claude-code",
     "database"
   ],
   "author": "Ivo Valcic",
