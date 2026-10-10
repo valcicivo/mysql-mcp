@@ -74,6 +74,8 @@ claude mcp add staging-db node /path/to/mysql-mcp/dist/index.js \
 | `SSH_USER` | Yes | — | SSH username |
 | `SSH_KEY_PATH` | Yes | — | Path to SSH private key |
 | `SSH_LOCAL_PORT` | No | `33061` | Local port for the SSH tunnel |
+| `SSH_DST_HOST` | No | `localhost` | Tunnel destination host, as seen from the SSH server. Use `127.0.0.1` if the server restricts forwarding (e.g. `permitopen="127.0.0.1:3306"`) |
+| `SSH_DST_PORT` | No | `3306` | Tunnel destination port, as seen from the SSH server |
 
 ## Security
 
