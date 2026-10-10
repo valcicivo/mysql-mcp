@@ -59,8 +59,8 @@ async function openTunnel(): Promise<boolean> {
   const forwardOptions = {
     srcAddr: 'localhost',
     srcPort: localPort,
-    dstAddr: 'localhost',
-    dstPort: 3306,
+    dstAddr: process.env.SSH_DST_HOST || 'localhost',
+    dstPort: parseInt(process.env.SSH_DST_PORT || '3306'),
   };
 
   try {
